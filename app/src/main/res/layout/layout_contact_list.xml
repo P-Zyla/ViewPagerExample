@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout >
+    <data class="ContactBinding">
+        <variable
+            name="contact_view"
+            type="com.example.viewpagerexample.viewmodel.ContactRecyclerVM" />
+    </data>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/profile_pic"
+    android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:text="@{contact_view.Name}"
+        android:id="@+id/name"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:layout_toEndOf="@+id/profile_pic"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="20dp"
+        android:paddingRight="5dp"
+        android:textSize="20dp"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/phone_number"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="@{contact_view.Number}"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textSize="14dp" />-->
+    </RelativeLayout>
+</layout>
